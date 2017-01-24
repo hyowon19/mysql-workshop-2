@@ -1,0 +1,14 @@
+mysql> INSERT INTO Account VALUES (null, 'hey123@example.com', 'yourPass', '2016-05-01', null);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO AddressBook VALUES (null, 23, 'BillyWee', '2015-10-03', '2015-12-15');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Entry VALUES (null, 98, 'Billy','Wee', '2001-05-20','home','phone', 'nothing to report', null, null, null, null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  INSERT INTO Entry VALUES (null, 98, 'Billy','Wee', '2001-05-20','home','phone', 'nothing to report', null, null, null, null);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO Entry VALUES (null, 50, 'Jill','Valentine', '1997-07-10','home','phone', 'nothing to report', 'zombies to kill', null, null, null);                                               
+Query OK, 1 row affected (0.01 sec)
