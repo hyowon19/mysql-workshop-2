@@ -1,0 +1,24 @@
+mysql> SELECT COUNT(*) AS 'Address Book Entries are not listed as other' FROM Entry where type != 'other';
++----------------------------------------------+
+| Address Book Entries are not listed as other |
++----------------------------------------------+
+|                                         2800 |
++----------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) AS 'Address Book Entries listed as either home or work' FROM Entry where type = 'home' OR type = 'work';                                                                      
++----------------------------------------------------+
+| Address Book Entries listed as either home or work |
++----------------------------------------------------+
+|                                               2800 |
++----------------------------------------------------+
+1 row in set (0.00 sec)
+
+
+mysql> SELECT COUNT(*) AS 'Address Book Entries listed as phones' FROM  Entry WHERE subtype = "phone";                                                                                               
++---------------------------------------+
+| Address Book Entries listed as phones |
++---------------------------------------+
+|                                   600 |
++---------------------------------------+
+1 row in set (0.00 sec)
