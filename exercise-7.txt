@@ -1,0 +1,12 @@
+/* Modified import-table-structure.sql again -- Changed all decodemtl_addressbook to decodemtl_addressbook_import.  */
+
+mysql > source data/import-account.sql
+
+mysql > source data/import-addressbook.sql
+
+mysql > source data/import-entry.sql
+
+/* There was a lot of data being entered, so I can't copy paste it all in this text file as proof.  It did import the data properly. */
+
+
+
