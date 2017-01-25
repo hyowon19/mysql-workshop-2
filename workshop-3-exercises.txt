@@ -1,0 +1,46 @@
+mysql> SELECT accountId, COUNT(*) FROM AddressBook GROUP BY AccountId ORDER BY COUNT(*) DESC LIMIT 1;
++-----------+----------+
+| accountId | COUNT(*) |
++-----------+----------+
+|         5 |       19 |
++-----------+----------+
+1 row in set (0.01 sec)
+
+
+
+mysql> SELECT addressBookId, COUNT(*) FROM Entry GROUP BY AddressBookId ORDER BY COUNT(*) DESC LIMIT 1;
++---------------+----------+
+| addressBookId | COUNT(*) |
++---------------+----------+
+|            37 |       52 |
++---------------+----------+
+1 row in set (0.01 sec)
+
+
+
+mysql> SELECT SUM(contentLineOne LIKE '(3%%') AS '# of Area Code Starting with 3' FROM Entry;                                                                                                        
++--------------------------------+
+| # of Area Code Starting with 3 |
++--------------------------------+
+|                             39 |
++--------------------------------+
+1 row in set (0.00 sec)
+
+
+mysql> SELECT COUNT(*) FROM Entry WHERE type = 'home' AND subtype = 'phone' AND contentLineOne NOT LIKE '%5%';                                                                                       
++----------+
+| COUNT(*) |
++----------+
+|       76 |
++----------+
+1 row in set (0.00 sec)
+
+
+
+mysql> SELECT COUNT(*) FROM Entry WHERE type = 'work' AND subtype = 'phone' AND contentLineOne LIKE '1-%';                                                                                           
++----------+
+| COUNT(*) |
++----------+
+|       60 |
++----------+
+1 row in set (0.00 sec)
